@@ -1,4 +1,4 @@
-name: Ubuntu Caller Workflow
+name: Windows Caller Workflow
 
 on:
     workflow_dispatch:
