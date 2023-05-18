@@ -1,4 +1,4 @@
-name: Ubuntu 14 Caller Workflow
+name: Ubuntu 20 Caller Workflow
 
 on:
     workflow_dispatch:
