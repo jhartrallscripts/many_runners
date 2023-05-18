@@ -6,7 +6,6 @@ on:
             runner_type:
                 description: 'The type of runner to use'
                 required: true
-                default: ubuntu-latest
                 type: string
 
 jobs:
