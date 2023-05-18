@@ -1,0 +1,19 @@
+name: Reusable Callee
+
+on:
+    workflow_call:
+        inputs:
+            runner_type:
+                description: 'The type of runner to use'
+                required: true
+                default: ubuntu-latest
+                type: string
+
+jobs:
+    date:
+        runs-on: ${{ inputs.runner_type }}
+        steps:
+            - name: Echo the date
+              run: echo "The date is $(date)"
+            - name: Echo the runner OS
+              run: echo "The runner OS is ${{ runner.os }}"
