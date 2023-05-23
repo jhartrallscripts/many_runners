@@ -7,6 +7,10 @@ on:
                 description: 'The type of runner to use'
                 required: true
                 type: string
+            runner_label:
+                description: 'The label of the runner to use'
+                required: true
+                type: string
 
 jobs:
     date:
