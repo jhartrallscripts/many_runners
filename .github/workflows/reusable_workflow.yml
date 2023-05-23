@@ -19,6 +19,7 @@ jobs:
             - name: Echo the date
               run: echo "The date is $(date)"
             - name: Echo the runner OS
-              run: echo "The runner OS is $(cat /etc/os-release)"
+              run: |
+                echo "The runner OS is $(cat /etc/os-release)"
             - name: Blast the runner label
               run: echo "The runner label is ${{ inputs.runner_label }}"
