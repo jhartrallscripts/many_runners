@@ -2,6 +2,11 @@ name: Ubuntu Caller Workflow
 
 on:
     workflow_dispatch:
+        inputs:
+            runner_type:
+                description: 'Runner type'
+                required: true
+                default: 'ubuntu-20.04'
 
 jobs:
     call_reusable_workflow:
